@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCGroup Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <!-- HEADER -->
+        <div id="header">
+            <div id="logo">
+                <img id="logo-img" src="/LOGOS/Logo (1).png" alt="logo" onmouseover="cambiaLogo('/LOGOS/Logo (2).png')" onmouseout="cambiaLogo('/LOGOS/Logo (1).png')">
+
+                <button id="menuBtn">&#9776;</button> 
+            </div>
+            <div id="nav">
+                <ul class = "menu">
+                    <li><a class= "category" href="">Hogar</a>
+                    
+                        <ul class = "submenu">
+                            <li><a class= "subcategory" href="">Mundo Hogar</a></li>
+                            <li><a class= "subcategory" href="">Muebles</a></li>
+                            <li><a class= "subcategory" href="">Decoración</a></li>
+                        </ul>
+                        
+                    </li>
+                    <li><a  class= "category" href="">Tecnología</a>
+                        <ul class = "submenu">
+                            <li><a class= "subcategory" href="">Smartwatch</a></li>
+                            <li><a class= "subcategory" href="">Audifonos</a></li>
+                            <li><a class= "subcategory" href="">Gamer</a></li>
+                        </ul>
+                    </li>
+                    <li><a class= "category" href="">Deporte</a>
+                        <ul class = "submenu">
+                            <li><a class= "subcategory" href="">Ropa</a></li>
+                            <li><a class= "subcategory" href="">Accesorios</a></li>
+                            <li><a class= "subcategory" href="">Training</a></li>
+                        </ul>
+                    
+                    </li>
+                    <li><a class= "category" href="">Electrodomésticos</a>
+                        <ul class = "submenu">
+                            <li><a class= "subcategory" href="">Cocina</a></li>
+                            <li><a class= "subcategory" href="">Pequeños Electrodomésticos</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- BANNER -->
+        <div id="banner">
+            <img id="banner-img" src="/Banners Principales/DELIVERY.png" alt="banner">
+            <button id="prevBtn" onclick="cambiarImagen(-1)">🢀</button>
+            <button id="nextBtn" onclick="cambiarImagen(1)">🢂</button>
+        </div>
+        <!-- PRODUCTOS -->
+        <div id="content">
+            <img src="/Imágenes/Cuadros 1.png" alt="img1">
+            <img src="/Imágenes/Cuadros 2.png" alt="img2">
+            <img src="/Imágenes/Cuadros 3.png" alt="img3">
+            <img src="/Imágenes/Cuadros 4.png" alt="img3">
+        </div>
+        <div id="slider">
+            <input id="slider-izq" onclick="cambiarSlider(-1)" type="button" value="←">
+            <img id="slider-img" src="/Imágenes/Cuadros 1.png" alt="img1">
+            <input id="slider-der" onclick="cambiarSlider(1)" type="button" value="→">
+        </div>
+    </div>
+    <script src="main.js"></script>    
+</body>
+</html>

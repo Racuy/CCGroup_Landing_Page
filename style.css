@@ -1,0 +1,205 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    background: linear-gradient(to bottom, #c03636,#7e5656);
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    
+}
+#logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+#logo img{
+    width: 180px
+}
+#logo:hover{
+    cursor: pointer;
+}
+#nav{
+    padding-bottom: 10px;
+    padding-top: 15px;
+    
+}
+
+
+.menu{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    z-index: 1;
+    
+}
+.submenu{
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    
+}
+.category{
+    border: 1px solid white;
+    display: block;
+    border-radius: 16px;
+    font-size: 27px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: rgba(200, 0, 0, 0.5);
+    
+}
+.subcategory{
+    border: 1px solid yellow;
+    display: block;
+    text-decoration: none;
+    font-size: 19px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(200, 0, 0, 0.9);
+}
+
+#nav ul li:hover  ul{
+    display: flex;
+    border: 1px solid yellow;
+}
+
+#nav ul li a:hover {
+    color: yellow;
+    border: 1px solid yellow;
+}
+
+#banner{
+    position: relative;
+}
+
+#banner-img {
+    max-width: 100%;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+#prevBtn, #nextBtn {
+    position: absolute;
+    top: 50%;
+    font-size: 18px;
+    cursor: pointer;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: none;
+    padding: 5px;
+}
+
+#prevBtn {
+    left: 10px;
+}
+
+#nextBtn {
+    right: 10px;
+}
+
+#content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    justify-content: space-evenly;
+}
+#content img {
+    width: 50%;
+    max-width: 280px;
+    bottom: 0px;
+    position: relative;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+#content  img:hover{
+    bottom: 5px;
+    border: 3px solid yellow;
+}
+
+#menuBtn {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    right: 100px;
+    color: white;
+}
+#slider{
+    display: none;
+    padding: 10px;
+}
+#slider img{
+    height: 250px;
+
+    border-radius: 20px;
+}
+#slider input{
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+        
+    #nav ul {
+        display: none;
+    }
+    #nav ul li {
+        display: block;
+    }
+    #logo #menuBtn {
+        display: block;
+    }
+    #logo{
+        justify-content: space-around;
+    }
+    #logo-img {
+        content: url('/LOGOS/Isotipo\ \(1\).png');
+        height: 120px;
+    }
+    #logo-img:hover {
+        content: url('/LOGOS/Isotipo\ \(2\).png');
+        height: 120px;
+    }
+    #banner{
+        display: flex;
+        justify-content: center;
+    }
+    #nextBtn{
+        display: none;
+    }
+    #prevBtn{
+        display: none;
+    }
+    #slider{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    #content{
+        display: none;
+    }
+
+}
+
+
+
+
